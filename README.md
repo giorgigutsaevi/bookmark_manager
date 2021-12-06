@@ -1,23 +1,24 @@
 Bookmark Manager User Stories:
-1st User Story.
-As a user;
-So I can see all my saved bookmarks;
-I want the program to show me a list of saved bookmarks
 
-2nd User Story:
-As a user;
-So I can add a bookmark;
-I want to the program to add a bookmark to my saved list of bookmarks;
+User Story #1
+>As a user\
+>So I can see all my saved bookmarks\
+>I want the program to show me a list of saved bookmarks
 
-3rd User Story:
-As a user;
-So I can delete a bookmark;
-I want to the program to delete a bookmark from my saved list of bookmarks;
+User Story #2
+>As a user\
+>So I can save a website\
+>I would like to add the website's URL and its title to my bookmark manager
 
-4th User Story:
-As a user
-So I can update a bookmark
-I want to the program to update a bookmark from the list of saved bookmarks
+User Story #3
+>As a user\
+>So I can delete a bookmark\
+>I want to the program to delete a bookmark from my saved list of bookmarks
+
+User Story #4
+>As a user\
+>So I can update a bookmark\
+>I want to the program to update a bookmark from the list of saved bookmarks
 
 5th User Story:
 As a user;
