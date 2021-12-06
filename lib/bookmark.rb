@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Bookmark class below
-class Bookmarks
+class Bookmark
   def self.all
     [
       'http://www.makersacademy.com',

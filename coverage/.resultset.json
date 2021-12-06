@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ibrahimchowdhury-makers/Documents/bookmark_manager/spec/bookmarks_spec.rb": {
+      "/Users/giorgigutsaevi/Projects/bookmark_manager/spec/bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -25,14 +25,13 @@
           null
         ]
       },
-      "/Users/ibrahimchowdhury-makers/Documents/bookmark_manager/spec/features/feature_spec.rb": {
+      "/Users/giorgigutsaevi/Projects/bookmark_manager/spec/features/feature_spec.rb": {
         "lines": [
           null,
-          null,
           1,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -44,6 +43,6 @@
         ]
       }
     },
-    "timestamp": 1638807312
+    "timestamp": 1638821979
   }
 }
