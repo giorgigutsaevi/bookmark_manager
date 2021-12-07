@@ -4,9 +4,17 @@ require 'bookmark'
 
 
 describe Bookmark do
-  context 'Checks if class instances are being created to check if a class exists' do
+
+  context '#initalization' do
     it 'creates an instance of the given class' do
       expect(subject).to be_an_instance_of(Bookmark)
+    end
+  end
+
+  context ".create" do
+    it "creates a new bookmark based on user's input" do
+      Bookmark.create(url: 'http://www.apple.com')
+      expect(Bookmark.all).to include "http://www.apple.com"
     end
   end
 
