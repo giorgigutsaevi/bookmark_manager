@@ -9,3 +9,5 @@ Every production needs a test environment. To that end, we will set up a test da
 	- `CREATE DATABASE "bookmark_manager_test";`
 - Create bookmarks table for our test DB
 	- `CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));`
+
+Taking this exercise into consideration, we might have changed our 3 initial URL's, and because it's a pain and bad practice to keep changing ourt feature tests to the 'original' 3 bookmarks everytime we run rspec, it's a quality-of-life improvement to introduce a test database! 
