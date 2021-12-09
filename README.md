@@ -12,8 +12,8 @@ User Story #2
 
 User Story #3
 >As a user\
->So I can delete a bookmark\
->I want to the program to delete a bookmark from my saved list of bookmarks
+>So I can remove a bookmark from the Bookmark Manager\
+>I want to delete a bookmark
 
 User Story #4
 >As a user\
