@@ -1,6 +1,7 @@
 require 'pg'
 require_relative 'database_connection'
 require 'uri'
+require_relative './comment'
 
 class Bookmark
 
@@ -58,6 +59,12 @@ class Bookmark
         title: bookmark['title'], 
         url: bookmark['url']
       )
+    end
+  end
+
+  def comments
+    def comments(comment_class = Comment)
+      comment_class.where(bookmark_id: id)
     end
   end
 

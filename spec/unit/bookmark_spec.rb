@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 require 'bookmark'
 require "database_helpers"
+require 'pg'
 
 describe Bookmark do
   subject {Bookmark.new(id: 3, title: "EV", url: "http://www.tesla.com")}
-  
+  let(:comment_class) { double(:comment_class) }
+
   context '#initalization' do
     it 'creates an instance of the given class' do
       expect(subject).to be_an_instance_of(Bookmark)
@@ -15,9 +17,10 @@ describe Bookmark do
     it "creates a new bookmark based on user's input" do
     
     bookmark = Bookmark.create(url: 'http://www.example.org', title: "Test Bookmark")
-    persisted_data = persisted_data(id: bookmark.id)
+    persisted_data = persisted_data(id: bookmark.id, table: 'bookmarks')
+
     expect(bookmark).to be_a Bookmark
-    expect(bookmark.id).to eq persisted_data['id']
+    expect(bookmark.id).to eq persisted_data.first['id']
     expect(bookmark.title).to eq 'Test Bookmark'
     expect(bookmark.url).to eq 'http://www.example.org'
     end
@@ -81,7 +84,12 @@ describe Bookmark do
     end
   end
 
-
-
-
+  context '#comments' do
+    it 'calls .where on the Comment class' do
+      bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+      expect(comment_class).to receive(:where).with(bookmark_id: bookmark.id)
+  
+      bookmark.comments(comment_class)
+    end
+  end
 end

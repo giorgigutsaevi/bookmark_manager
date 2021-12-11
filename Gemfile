@@ -22,3 +22,5 @@ gem "pg", "~> 1.2"
 gem "sinatra", "~> 2.1"
 gem "sinatra-contrib", "~> 2.1"
 gem "sinatra-flash", "~> 0.3.0"
+
+gem "bcrypt", "~> 3.1"
